@@ -96,8 +96,8 @@ wget -q -P /usr/local/bin/ https://raw.githubusercontent.com/Ibrch/scripts/refs/
 chmod +x /usr/local/bin/load.sh /usr/local/bin/generate_multi_logs.sh
 
 echo "Starting load generation in background..."
-nohup /usr/local/bin/load.sh > /dev/null 2>&1 &
-nohup /usr/local/bin/generate_multi_logs.sh > /dev/null 2>&1 &
+nohup /usr/local/bin/load_stress.sh > /dev/null 2>&1 &
+nohup /usr/local/bin/log_generator.sh > /dev/null 2>&1 &
 
 echo "✅ Load generation setup completed."
 
