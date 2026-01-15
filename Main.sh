@@ -91,9 +91,8 @@ echo "===== [4/6] Setting up load generation scripts ====="
 apt install -y stress
 
 echo "Downloading load scripts..."
-wget -q -P /usr/local/bin/ https://raw.githubusercontent.com/Ibrch/scripts/refs/heads/main/load_stress.sh?token=GHSAT0AAAAAADTJVO2OPCKNKONX3MIPMXP22LI4YTQ
-wget -q -P /usr/local/bin/ https://raw.githubusercontent.com/Ibrch/scripts/refs/heads/main/log_generator.sh?token=GHSAT0AAAAAADTJVO2PTKZD7STRAAEAE6WK2LI4ZAQ
-
+wget -q -P /usr/local/bin/ https://raw.githubusercontent.com/Ibrch/scripts/refs/heads/main/load_stress.sh
+wget -q -P /usr/local/bin/ https://raw.githubusercontent.com/Ibrch/scripts/refs/heads/main/log_generator.sh
 chmod +x /usr/local/bin/load.sh /usr/local/bin/generate_multi_logs.sh
 
 echo "Starting load generation in background..."
